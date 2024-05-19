@@ -1,3 +1,3 @@
-<div>
-    {{-- Knowing others is intelligence; knowing yourself is true wisdom. --}}
-</div>
+    <div>
+        <button wire:click="StartEvent">Fire</button>
+    </div>

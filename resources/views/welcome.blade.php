@@ -851,11 +851,19 @@
         <h1>Hello Every Body</h1>
         <br>
                 @livewire('first-event')
-                @livewire('second-event')
 
 
     </div>
+
     @livewireScripts
+    <script>
+        window.addEventListener('fire', function() {
+            alert('Name updated to: ' );
+        })
+        </script>
+
+
+
 </body>
 
 </html>

@@ -7,10 +7,16 @@ use Livewire\Component;
 class FirstEvent extends Component
 {
 
-    protected $listeners = ['fire'=>'ambulance'];
+    // protected $listeners = ['fire'=>'ambulance'];
 
-    public function ambulance(){
-        dd('يارب يشتغل لان انا زهقت');
+    // public function ambulance(){
+    //     dd('يارب يشتغل لان انا زهقت');
+    // }
+
+
+    public function StartEvent(){
+        // $this->emit('fire');
+        $this->dispatchBrowserEvent('fire');
     }
 
     public function render()
