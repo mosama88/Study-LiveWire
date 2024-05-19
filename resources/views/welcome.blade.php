@@ -848,20 +848,22 @@
             </div>
         @endif
 
-        <h1>Hello Every Body</h1>
+{{--        <h1>Hello Every Body</h1>--}}
         <br>
-                @livewire('first-event')
+{{--                @livewire('first-event')--}}
 
+<div>
+    @livewire('try-hock')
 
+</div>
     </div>
 
     @livewireScripts
-    <script>
-        window.addEventListener('fire', function() {
-            alert('Name updated to: ' );
-        })
-        </script>
-
+{{--    <script>--}}
+{{--        window.addEventListener('fire', function() {--}}
+{{--            alert('Name updated to: ' );--}}
+{{--        })--}}
+{{--        </script>--}}
 
 
 </body>
