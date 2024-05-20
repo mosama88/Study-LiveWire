@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -36,6 +37,13 @@ use WithFileUploads;
 //        $this->validate();
 //
 //    }
+
+
+    public function export()
+    {
+        return Storage::disk('local')->download('livewire-tmp/01TO0kNUorfGUN4kr6sufrs5JlHhuQ-metaMjg5MDI1MjUxXzc2NTUzMTk3ODIyMDExMF8xNDQ3MzY2OTY1MjAzNTg4Njk4X24ucG5n-.png');
+    }
+
     public function submit(){
 
         $this->validate($this->rules(),$this->messages());

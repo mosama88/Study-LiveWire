@@ -26,6 +26,11 @@
             @endif
         </div>
 
+
+        <button wire:click="export">
+            Download File
+        </button>
+
             <div class="mb-3 my-3">
                 <button type="submit" class="btn btn-outline-primary mb-3">Confirm identity</button>
             </div>
