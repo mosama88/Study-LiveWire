@@ -15,10 +15,9 @@
         @enderror
         </div>
 
-        <div class="mb-3 ">
-          <small wire:loading wire:target="photo    ">Uploading.....</small>
+        <div class="spinner-border text-primary" role="status" wire:loading wire:target="photo">
+   <span class="visually-hidden">Loading...</span>{{--          loding states--}}
         </div>
-
 
         <div class="mb-3 my-3">
             @if ($photo)
