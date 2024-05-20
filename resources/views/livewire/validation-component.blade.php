@@ -1,7 +1,11 @@
 
 {{--wire:model.defer="email"--}}
-
 <form action="" class="m-auto my-4 w-50" wire:submit.prevent="submit" autocomplete="off">
+@error('email')
+<div class="alert text-danger" role="alert">
+    {{$message}}
+</div>
+@enderror
 
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Email address</label>

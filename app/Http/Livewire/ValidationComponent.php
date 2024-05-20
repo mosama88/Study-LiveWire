@@ -18,17 +18,26 @@ class ValidationComponent extends Component
         'remember'=> 'nullable',
     ];
 
-    public function updated(){
+    //Real Time All Inputs
+//    public function updated(){
+//
+//        $this->validate();
+//
+//    }
 
-        $this->validate();
+//    public function updatedEmail(){
+//
+//        $this->validateOnly('password');
+//
+//    }
 
-    }
 
-    public function submit(){
+//    public function updated(){
+//
+//        $this->validateOnly('password');
+//
+//    }
 
-        $this->validate();
-
-    }
 
     protected $messages =
 
@@ -43,6 +52,13 @@ class ValidationComponent extends Component
             ########################################################
         ];
 
+    public function submit(){
+
+        $this->validate($this->rules,$this->messages);
+//        $this->addError('email', 'The email field is invalid.');
+//        $this->resetErrorBag();
+
+    }
 
     public function render()
     {

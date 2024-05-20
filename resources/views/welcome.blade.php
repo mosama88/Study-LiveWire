@@ -850,8 +850,10 @@
         @endif
 
 
-        @livewire('validation-component')
-{{--        <h1>Hello Every Body</h1>--}}
+@livewire('file-uploud-component')
+{{--        @livewire('validation-component')--}}
+
+            {{--        <h1>Hello Every Body</h1>--}}
 {{--        <br>--}}
 {{--                @livewire('first-event')--}}
 
